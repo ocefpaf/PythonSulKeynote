@@ -99,7 +99,7 @@ O profissional precisa se re-inventar
 
 # ps aux != "work"
 
-Dirty dishes
+<img src="images/dirty-dishes.jpg" style="width:750px">
 
 <aside class="notes">
 Todos precisamos de um hobby.
@@ -327,7 +327,29 @@ e = ERDDAP(server='https://data.ioos.us/gliders/erddap',
 
 >- Segue os moldes do UK Met Office.
 >- Gerencia Software, uso das tecnologias, dados, e projetos no GitHub.
->- a
+>- O objetivo principal é melhorar a passagem do conhecimento através de várias gerências.
+
+# Data Demo Center
+
+<img src="images/IOOS-data-demo-center.png" style="width:650px">
+
+
+[https://ioos.github.io/notebooks_demos](https://ioos.github.io/notebooks_demos)
+
+# Code Gallery
+
+<img src="images/code-gallery.png" style="width:650px">
+
+# Notebook time!
+
+<a href="http://nbviewer.jupyter.org/github/ocefpaf/PythonSulKeynote/blob/gh-pages/notebooks/turtles.ipynb"><img src="images/logo-jupyter.png"></a>
+
+<a href="http://nbviewer.jupyter.org/github/ocefpaf/PythonSulKeynote/blob/gh-pages/notebooks/wave_height_assessment.ipynb"><img src="images/logo-jupyter.png"></a>
+
+
+# Just one more :-)
+
+<a href="http://nbviewer.jupyter.org/github/ocefpaf/PythonSulKeynote/blob/gh-pages/notebooks/gistemp.ipynb"><img src="images/logo-jupyter.png"></a>
 
 
 # Já que o assunto é Ciência
@@ -374,12 +396,18 @@ Não é nem um pouco diferente do que é atualmente praticado nas comunidades de
 Ciência não é tão diferente assim de programação!
 
 
+# Talvez a única diferença seja...
+
+<iframe width="711" height="533" src="https://www.youtube.com/embed/ZyjCqQEUa8o?t=1771" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
+
+
+
 # O que eu, profissional da tecnologia, tenho isso?
 
 <iframe width="711" height="533" src="https://www.youtube.com/embed/kaGS4YXwciQ?start=1294" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
 
 
-# por que devo me importar?
+# Por que devo me importar?
 
 <div class="row">
 <div class="column">![](images/Cassino.png)</div>
@@ -389,15 +417,12 @@ Ciência não é tão diferente assim de programação!
 [clique aqui para ver o notebook](http://nbviewer.jupyter.org/gist/ocefpaf/3f1765577d11e0cac3ee905e49936460)
 
 
-# GISTEMP
-
-notebook
-
 # Pangeo
 
 <img src="images/pangeo-ssh.png" style="width:700px">
 
 <a href="http://pangeo.pydata.org/"><img src="images/logo-jupyter.png"></a>
+
 
 # *Scientific Software pledge*
 
@@ -411,3 +436,7 @@ notebook
 >- Publicar as contribuições intelectuais do meu software de pesquisa.
 >- Documentar (incluindo instruções de uso e exemplos de entrada e saída), pacotes, *releases*, e versões arquivadas do meu software.
 
+
+# Perguntas?
+
+![](images/disco.gif)
