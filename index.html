@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <title>20 Mil Léguas Sub-pythonicas</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="reveal.js/css/reveal.css">
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; position: absolute; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; }
+pre.numberSource a.sourceLine:empty
+  { position: absolute; }
+pre.numberSource a.sourceLine::before
+  { content: attr(data-line-number);
+    position: absolute; left: -5em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    background-color: #2a211c;
+    color: #bdae9d;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #bdae9d;  padding-left: 4px; }
+div.sourceCode
+  { color: #bdae9d; background-color: #2a211c; }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ffff00; } /* Alert */
+code span.an { color: #0066ff; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { } /* Attribute */
+code span.bn { color: #44aa43; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #43a8ed; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #049b0a; } /* Char */
+code span.cn { } /* Constant */
+code span.co { color: #0066ff; font-weight: bold; font-style: italic; } /* Comment */
+code span.do { color: #0066ff; font-style: italic; } /* Documentation */
+code span.dt { text-decoration: underline; } /* DataType */
+code span.dv { color: #44aa43; } /* DecVal */
+code span.er { color: #ffff00; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #44aa43; } /* Float */
+code span.fu { color: #ff9358; font-weight: bold; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #0066ff; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #43a8ed; font-weight: bold; } /* Keyword */
+code span.op { } /* Operator */
+code span.pp { font-weight: bold; } /* Preprocessor */
+code span.sc { color: #049b0a; } /* SpecialChar */
+code span.ss { color: #049b0a; } /* SpecialString */
+code span.st { color: #049b0a; } /* String */
+code span.va { } /* Variable */
+code span.vs { color: #049b0a; } /* VerbatimString */
+code span.wa { color: #ffff00; font-weight: bold; } /* Warning */
+  </style>
+  <link rel="stylesheet" href="reveal.js/css/theme/black.css" id="theme">
+  <link rel="stylesheet" href="slides.css"/>
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal.js/css/print/pdf.css' : 'reveal.js/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+  <!--[if lt IE 9]>
+  <script src="reveal.js/lib/js/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide">
+  <h1 class="title">20 Mil Léguas Sub-pythonicas</h1>
+</section>
+
+<section id="whoami" class="slide level1">
+<h1>whoami</h1>
+<h3 id="filipe-fernandes">Filipe Fernandes</h3>
+<h4 id="ocefpaf">(<a href="(https://github.com/ocefpaf)">ocefpaf</a>)</h4>
+<p><img data-src="images/twitter-github.png" /></p>
+<p>Oceanógrafo Físico por profissão, programador por acaso, educador por paixão.</p>
+<aside class="notes">
+Primeira conferência de Python que atendi foi em 2012
+</aside>
+</section>
+<section id="o-que-é-oceanografia" class="slide level1">
+<h1>O que é oceanografia?</h1>
+<p>(em 3 slides)</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb1-1" data-line-number="1">slides <span class="op">=</span> <span class="bu">iter</span>([<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>])</a>
+<a class="sourceLine" id="cb1-2" data-line-number="2"><span class="bu">next</span>(slides)</a></code></pre></div>
+<ul>
+<li class="fragment">um curso essencialmente científico com foco primariamente acadêmico;</li>
+<li class="fragment">bases em física, química, biologia, e geologia;</li>
+<li class="fragment">oceanógraf@s sabem um pouco de tudo, mas nada em profundidade.</li>
+</ul>
+</section>
+<section id="nextslides" class="slide level1">
+<h1><code>next(slides)</code></h1>
+<p>O que todos acham que é:</p>
+<div class="fragment">
+<p><img src="images/photo-whale.jpg" style="width:750px"></p>
+</div>
+</section>
+<section id="nextslides-1" class="slide level1">
+<h1><code>next(slides)</code></h1>
+<p>O que realmente é:</p>
+<div class="fragment">
+<p><img src="images/photo-fundeio-0.jpg" style="width:650px"></p>
+</div>
+</section>
+<section id="nextslides-2" class="slide level1">
+<h1><code>next(slides)</code></h1>
+<p>Mas nem tudo é trabalho</p>
+<p><img src="images/photo-churrasco.jpg" style="width:650px"></p>
+</section>
+<section id="nextslides-3" class="slide level1">
+<h1><code>next(slides)</code></h1>
+<p>O mercado de trabalho…</p>
+<div class="fragment">
+<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="pp">StopIteration</span></a>
+<a class="sourceLine" id="cb2-2" data-line-number="2">Traceback (most recent call last)</a>
+<a class="sourceLine" id="cb2-3" data-line-number="3"><span class="op">&lt;</span>ipython<span class="op">-</span><span class="bu">input</span><span class="dv">-8</span><span class="op">-</span>943ae0641b78<span class="op">&gt;</span> <span class="kw">in</span> <span class="op">&lt;</span>module<span class="op">&gt;</span>()</a>
+<a class="sourceLine" id="cb2-4" data-line-number="4"><span class="op">----&gt;</span> <span class="dv">1</span> <span class="bu">next</span>(slides)</a>
+<a class="sourceLine" id="cb2-5" data-line-number="5"></a>
+<a class="sourceLine" id="cb2-6" data-line-number="6"><span class="pp">StopIteration</span>:</a></code></pre></div>
+<aside class="notes">
+Academia está saturada Boom do petróleo e atividades embarcadas passou Formam O profissional precisa se re-inventar
+</aside>
+</div>
+</section>
+<section id="ps-aux-grep-work" class="slide level1">
+<h1>ps aux | grep “work”</h1>
+<p><img data-src="images/ioos_by_the_numbers_graphic2_feb2017-2.png" /></p>
+</section>
+<section id="ioosras" class="slide level1">
+<h1>IOOS/RAs</h1>
+<p><img data-src="images/IOOS-RAs.jpg" /></p>
+</section>
+<section id="ps-aux-grep-volunteer-work" class="slide level1">
+<h1>ps aux | grep “volunteer work”</h1>
+<p><img src="images/logo-software-data-carpentry.png" style="width:550px"></p>
+<p><img data-src="images/logo-TheCarpentries.png" /></p>
+</section>
+<section id="ps-aux-work" class="slide level1">
+<h1>ps aux != “work”</h1>
+<p>Dirty dishes</p>
+<aside class="notes">
+Todos precisamos de um hobby. Depois de mundo tempo procurando um desisti e fiquei com a atividade de lavar louças!
+</aside>
+</section>
+<section id="ps-aux-grep-academia" class="slide level1">
+<h1>ps aux | grep “academia”</h1>
+<p><img src="images/logo-CNPq.png" style="width:250px"></p>
+<p><img src="images/logo-anp.png" style="width:250px"></p>
+<div class="fragment">
+<p><img src="images/logo-fapesp.png" style="width:250px"></p>
+</div>
+<div class="fragment">
+<p><img src="images/logo-fulbright.jpg" style="width:250px"></p>
+</div>
+</section>
+<section id="if-bad_results-break" class="slide level1">
+<h1>if bad_results: break</h1>
+<p><img src="images/logo-GSoC-2011.png" style="width:600px"></p>
+<p><a href="https://www.google-melange.com/archive/gsoc/2011/orgs/climatecode/projects/ocefpaf.html">climatecode</a></p>
+</section>
+<section id="evasão-da-academia" class="slide level1">
+<h1>Evasão da academia</h1>
+<p><img data-src="images/wesphd.png" /></p>
+</section>
+<section id="ps-aux-grep-oss-work" class="slide level1">
+<h1>ps aux | grep “OSS work”</h1>
+<p><img data-src="images/github-org.png" /></p>
+</section>
+<section id="ps-aux-grep-oss-work-1" class="slide level1">
+<h1>ps aux | grep “OSS work”</h1>
+<p><img data-src="images/github-org-alt.png" /></p>
+</section>
+<section id="section" class="slide level1">
+<h1></h1>
+<p><img data-src="images/logo-ipython.png" /></p>
+<ul>
+<li class="fragment">Apenas uma inspiração para <strong>não</strong> programadores:</li>
+<li class="fragment">Projeto inicial era de um oceanógrafo!</li>
+<li class="fragment">Fernando Perez é Físico e desenvolveu o projeto durante o doutorado.</li>
+<li class="fragment">Minha participação foi pequena: <code>nbconvert</code></li>
+</ul>
+</section>
+<section id="section-1" class="slide level1">
+<h1></h1>
+<p><img data-src="images/logo-scitools.png" /></p>
+<ul>
+<li class="fragment">Comunidade do UK Met Office no GitHub</li>
+<li class="fragment">Todo o trabalho deles é OSS</li>
+<li class="fragment">Um exemplo de como um órgão governamental deve agir!</li>
+</ul>
+<div class="fragment">
+<p><a href="https://github.com/SciTools" class="uri">https://github.com/SciTools</a></p>
+</div>
+</section>
+<section id="iris" class="slide level1">
+<h1>Iris</h1>
+<p><img data-src="images/iris.png" /></p>
+</section>
+<section id="cartopy" class="slide level1">
+<h1>Cartopy</h1>
+<p><img data-src="images/cartopy.png" /></p>
+</section>
+<section id="section-2" class="slide level1">
+<h1></h1>
+<p><img data-src="images/logo-TEOS-10.jpg" /></p>
+<ul>
+<li class="fragment">Começo turbulento</li>
+<li class="fragment">Muito academicismo e pouco Software</li>
+<li class="fragment">SCOR/IAPSO Working group 127</li>
+</ul>
+</section>
+<section id="section-3" class="slide level1">
+<h1></h1>
+<p><img data-src="images/borg.jpg" /></p>
+</section>
+<section id="section-4" class="slide level1">
+<h1></h1>
+<p><img data-src="images/logo-pyoceans.jpg" /></p>
+<ul>
+<li class="fragment">Uma organização aberta a toda comunidade oceanográfica que se interessa por programação.</li>
+<li class="fragment">A ideia é não ter vínculos com governo, empresas, universidades, etc.</li>
+<li class="fragment">Um espaço aberto à todos.</li>
+</ul>
+</section>
+<section id="gridgeo" class="slide level1">
+<h1>gridgeo</h1>
+<p><img src="images/gridgeo-0.png" style="width:750px"></p>
+</section>
+<section id="gridgeo-1" class="slide level1">
+<h1>gridgeo</h1>
+<p><img src="images/gridgeo-1.png" style="width:750px"></p>
+</section>
+<section id="python-ctd" class="slide level1">
+<h1>python-ctd</h1>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb3-1" data-line-number="1"><span class="im">from</span> ctd <span class="im">import</span> DataFrame</a>
+<a class="sourceLine" id="cb3-2" data-line-number="2">cast <span class="op">=</span> DataFrame.from_cnv(<span class="st">&#39;g01l06s01.cnv&#39;</span>)</a>
+<a class="sourceLine" id="cb3-3" data-line-number="3">downcast, upcast <span class="op">=</span> cast.split()</a>
+<a class="sourceLine" id="cb3-4" data-line-number="4">fix, ax <span class="op">=</span> downcast[<span class="st">&#39;t090c&#39;</span>].plot()</a></code></pre></div>
+<p><img src="images/python-ctd.png" style="width:450px"></p>
+</section>
+<section id="pocean-core" class="slide level1">
+<h1>pocean-core</h1>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb4-1" data-line-number="1">attributes <span class="op">=</span> {</a>
+<a class="sourceLine" id="cb4-2" data-line-number="2">  <span class="st">&#39;global&#39;</span>: {</a>
+<a class="sourceLine" id="cb4-3" data-line-number="3">    <span class="st">&#39;title&#39;</span>: <span class="st">&#39;Fake mooring&#39;</span>,</a>
+<a class="sourceLine" id="cb4-4" data-line-number="4">    <span class="st">&#39;summary&#39;</span>: <span class="st">&#39;Vector current meter ADCP @ 10 m&#39;</span>,</a>
+<a class="sourceLine" id="cb4-5" data-line-number="5">    <span class="st">&#39;institution&#39;</span>: <span class="st">&#39;Restaurant at the end of the universe&#39;</span>,</a>
+<a class="sourceLine" id="cb4-6" data-line-number="6">    <span class="st">&#39;cdm_timeseries_variables&#39;</span>: <span class="st">&#39;station&#39;</span>,</a>
+<a class="sourceLine" id="cb4-7" data-line-number="7">    <span class="st">&#39;subsetVariables&#39;</span>: <span class="st">&#39;depth&#39;</span>,</a>
+<a class="sourceLine" id="cb4-8" data-line-number="8">  },</a>
+<a class="sourceLine" id="cb4-9" data-line-number="9">  <span class="st">&#39;longitude&#39;</span>: {</a>
+<a class="sourceLine" id="cb4-10" data-line-number="10">    <span class="st">&#39;units&#39;</span>: <span class="st">&#39;degrees_east&#39;</span>,</a>
+<a class="sourceLine" id="cb4-11" data-line-number="11">    <span class="st">&#39;standard_name&#39;</span>: <span class="st">&#39;longitude&#39;</span>,</a>
+<a class="sourceLine" id="cb4-12" data-line-number="12">  },</a>
+<a class="sourceLine" id="cb4-13" data-line-number="13">   ...</a>
+<a class="sourceLine" id="cb4-14" data-line-number="14">}</a></code></pre></div>
+</section>
+<section id="pocean-core-1" class="slide level1">
+<h1>pocean-core</h1>
+<div class="sourceCode" id="cb5"><pre class="sourceCode xml"><code class="sourceCode xml"><a class="sourceLine" id="cb5-1" data-line-number="1">netcdf fake_buoy {</a>
+<a class="sourceLine" id="cb5-2" data-line-number="2">  dimensions:</a>
+<a class="sourceLine" id="cb5-3" data-line-number="3">    station = 1 ;</a>
+<a class="sourceLine" id="cb5-4" data-line-number="4">  variables:</a>
+<a class="sourceLine" id="cb5-5" data-line-number="5">    double longitude(station) ;</a>
+<a class="sourceLine" id="cb5-6" data-line-number="6">    longitude:axis = &quot;X&quot; ;</a>
+<a class="sourceLine" id="cb5-7" data-line-number="7">    longitude:units = &quot;degrees_east&quot; ;</a>
+<a class="sourceLine" id="cb5-8" data-line-number="8">    longitude:standard_name = &quot;longitude&quot; ;</a>
+<a class="sourceLine" id="cb5-9" data-line-number="9">  // global attributes:</a>
+<a class="sourceLine" id="cb5-10" data-line-number="10">    :Conventions = &quot;CF-1.6&quot; ;</a>
+<a class="sourceLine" id="cb5-11" data-line-number="11">    :cdm_data_type = &quot;Timeseries&quot; ;</a>
+<a class="sourceLine" id="cb5-12" data-line-number="12">    :summary = &quot;Vector current meter ADCP @ 10 m&quot; ;</a>
+<a class="sourceLine" id="cb5-13" data-line-number="13">    :institution = &quot;Restaurant at the end of the universe&quot; ;</a>
+<a class="sourceLine" id="cb5-14" data-line-number="14">    }</a></code></pre></div>
+</section>
+<section id="erddapy" class="slide level1">
+<h1>erddapy</h1>
+<div class="sourceCode" id="cb6"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb6-1" data-line-number="1"><span class="im">from</span> erddapy <span class="im">import</span> ERDDAP</a>
+<a class="sourceLine" id="cb6-2" data-line-number="2"></a>
+<a class="sourceLine" id="cb6-3" data-line-number="3">constraints <span class="op">=</span> {<span class="st">&#39;time&gt;=&#39;</span>: <span class="st">&#39;2016-07-10T00:00:00Z&#39;</span>,</a>
+<a class="sourceLine" id="cb6-4" data-line-number="4">               <span class="st">&#39;time&lt;=&#39;</span>: <span class="st">&#39;2017-02-10T00:00:00Z&#39;</span>,</a>
+<a class="sourceLine" id="cb6-5" data-line-number="5">               <span class="st">&#39;latitude&gt;=&#39;</span>: <span class="fl">38.0</span>, <span class="st">&#39;latitude&lt;=&#39;</span>: <span class="fl">41.0</span>,</a>
+<a class="sourceLine" id="cb6-6" data-line-number="6">               <span class="st">&#39;longitude&gt;=&#39;</span>: <span class="fl">-72.0</span>, <span class="st">&#39;longitude&lt;=&#39;</span>: <span class="fl">-69.0</span>,}</a>
+<a class="sourceLine" id="cb6-7" data-line-number="7"></a>
+<a class="sourceLine" id="cb6-8" data-line-number="8">variables <span class="op">=</span> [<span class="st">&#39;depth&#39;</span>, <span class="st">&#39;temperature&#39;</span>,]</a>
+<a class="sourceLine" id="cb6-9" data-line-number="9"></a>
+<a class="sourceLine" id="cb6-10" data-line-number="10">e <span class="op">=</span> ERDDAP(server<span class="op">=</span><span class="st">&#39;https://data.ioos.us/gliders/erddap&#39;</span>,</a>
+<a class="sourceLine" id="cb6-11" data-line-number="11">    constraints<span class="op">=</span>constraints,</a>
+<a class="sourceLine" id="cb6-12" data-line-number="12">    variables<span class="op">=</span>variables,</a>
+<a class="sourceLine" id="cb6-13" data-line-number="13">)</a></code></pre></div>
+</section>
+<section id="erddapy-1" class="slide level1">
+<h1>erddapy</h1>
+<p><img src="images/erddapy.png" style="width:700px"></p>
+</section>
+<section id="folium" class="slide level1">
+<h1>folium</h1>
+<p><img src="images/folium-tweets.png" style="width:700px"></p>
+</section>
+<section id="section-5" class="slide level1">
+<h1></h1>
+<p><img data-src="images/logo-conda-forge.svg" /></p>
+<ul>
+<li class="fragment">provavelmente o projeto de maior alcance fora de área de Met/Ocean</li>
+<li class="fragment">comunidade com crescimento orgânico e rápido</li>
+<li class="fragment">missão: facilitar a instalação de software</li>
+</ul>
+</section>
+<section id="por-que" class="slide level1">
+<h1>Por que?</h1>
+<p><img data-src="images/pip_install_gdal.jpg" /></p>
+</section>
+<section id="community" class="slide level1">
+<h1>community</h1>
+<p><img data-src="images/conda-forge-community.png" /></p>
+</section>
+<section id="conda-forgecore" class="slide level1">
+<h1><span class="citation" data-cites="conda-forge/core">@conda-forge/core</span></h1>
+<p><img data-src="images/conda-forge-core.png" /></p>
+</section>
+<section id="objetivo" class="slide level1">
+<h1>objetivo</h1>
+<p><img data-src="images/lotr-one-ring-to-rule-them-all-one-channel-to-rule-them-all-conda-forge.jpg" /></p>
+</section>
+<section id="section-6" class="slide level1">
+<h1></h1>
+<p><img data-src="images/logo-ioos.jpg" /></p>
+<ul>
+<li class="fragment">Segue os moldes do UK Met Office.</li>
+<li class="fragment">Gerencia Software, uso das tecnologias, dados, e projetos no GitHub.</li>
+<li class="fragment">a</li>
+</ul>
+</section>
+<section id="já-que-o-assunto-é-ciência" class="slide level1">
+<h1>Já que o assunto é Ciência</h1>
+<ul>
+<li class="fragment">Quantos aqui tem um diploma em ciência básica?</li>
+<li class="fragment">Quantos não mais praticam essa ciência no dia-a-dia?</li>
+<li class="fragment">Quem se (re-)encontrou na área de tecnologia/data science?</li>
+</ul>
+</section>
+<section id="quem-faz-ciência" class="slide level1">
+<h1>Quem faz ciência?</h1>
+<ul>
+<li class="fragment">constrói e organiza conhecimento</li>
+<li class="fragment">testa explicações sobre o universo:</li>
+<li class="fragment">sistematicamente,</li>
+<li class="fragment">objetivamente,</li>
+<li class="fragment">de forma transparente,</li>
+<li class="fragment">e reprodutível.</li>
+</ul>
+</section>
+<section id="ciência-conta-com" class="slide level1">
+<h1>Ciência conta com:</h1>
+<ul>
+<li class="fragment">revisão pelos pares</li>
+<li class="fragment">ceticismo</li>
+<li class="fragment">transparência</li>
+<li class="fragment">atribuição</li>
+<li class="fragment">prestação de contas</li>
+<li class="fragment">colaboração</li>
+<li class="fragment">e impacto!</li>
+</ul>
+</section>
+<section id="exemplo-missão-da-ufsc" class="slide level1">
+<h1>Exemplo: missão da UFSC</h1>
+<p>Qualidade, Inovação, Atuação, Inclusão, Internacionalização, Liberdade e responsabilidade, Autonomia, Democrática e plural, Otimização administrativa, Transparência, Ética.</p>
+<aside class="notes">
+Não é nem um pouco diferente do que é atualmente praticado nas comunidades de tecnologia aqui em Floripa.
+</aside>
+</section>
+<section id="o-ponto-é" class="slide level1">
+<h1>O ponto é</h1>
+<p>Ciência não é tão diferente assim de programação!</p>
+</section>
+<section id="o-que-eu-profissional-da-tecnologia-tenho-isso" class="slide level1">
+<h1>O que eu, profissional da tecnologia, tenho isso?</h1>
+<iframe width="711" height="533" src="https://www.youtube.com/embed/kaGS4YXwciQ?start=1294" frameborder="0" allow="encrypted-media" allowfullscreen>
+</iframe>
+</section>
+<section id="por-que-devo-me-importar" class="slide level1">
+<h1>por que devo me importar?</h1>
+<div class="row">
+<div class="column">
+<img data-src="images/Cassino.png" />
+</div>
+<div class="column">
+<img data-src="images/length-floripa.png" />
+</div>
+</div>
+<p><a href="http://nbviewer.jupyter.org/gist/ocefpaf/3f1765577d11e0cac3ee905e49936460">clique aqui para ver o notebook</a></p>
+</section>
+<section id="gistemp" class="slide level1">
+<h1>GISTEMP</h1>
+<p>notebook</p>
+</section>
+<section id="pangeo" class="slide level1">
+<h1>Pangeo</h1>
+<p><img src="images/pangeo-ssh.png" style="width:700px"></p>
+<p><a href="http://pangeo.pydata.org/"><img src="images/logo-jupyter.png"></a></p>
+</section>
+<section id="scientific-software-pledge" class="slide level1">
+<h1><em>Scientific Software pledge</em></h1>
+<ul>
+<li class="fragment">Desenvolver Software aberto desde o início, sempre que possível.</li>
+<li class="fragment">Contribuir para a sustentabilidade do Software que uso e dependo.</li>
+<li class="fragment">Aplicar práticas propostas de engenharia de software de acordo com as necessidades e recursos reais do projeto.</li>
+</ul>
+</section>
+<section id="scientific-software-pledge.." class="slide level1">
+<h1><em>Scientific Software pledge..</em></h1>
+<ul>
+<li class="fragment">Ajudar os pesquisadores a melhorar a qualidade do seu software sem julgar.</li>
+<li class="fragment">Publicar as contribuições intelectuais do meu software de pesquisa.</li>
+<li class="fragment">Documentar (incluindo instruções de uso e exemplos de entrada e saída), pacotes, <em>releases</em>, e versões arquivadas do meu software.</li>
+</ul>
+</section>
+    </div>
+  </div>
+
+  <script src="reveal.js/lib/js/head.min.js"></script>
+  <script src="reveal.js/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        // Push each slide change to the browser history
+        history: true,
+        math: {
+          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true },
+          { src: 'reveal.js/plugin/math/math.js', async: true },
+          { src: 'reveal.js/plugin/notes/notes.js', async: true }
+        ]
+      });
+    </script>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+name: keynote
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.6
+  - pypy2.7
+  - r-base=3.4.1
+  - geopandas
+  - jupyter
+  - oct2py
+  - octave
+  - octave_kernel
+  - palettable
+  - pandas
+  - pandoc
+  - r-ggplot2
+  - r-obistools
+  - r-robis
+  - rpy2
+  - scikit-learn
+  - pip:
+    - git+https://github.com/python-visualization/folium.git
+    - ads
