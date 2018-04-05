@@ -342,14 +342,18 @@ e = ERDDAP(server='https://data.ioos.us/gliders/erddap',
 
 # Notebook time!
 
-<a href="http://nbviewer.jupyter.org/github/ocefpaf/PythonSulKeynote/blob/gh-pages/notebooks/turtles.ipynb"><img src="images/logo-jupyter.png"></a>
+. . .
 
-<a href="http://nbviewer.jupyter.org/github/ocefpaf/PythonSulKeynote/blob/gh-pages/notebooks/wave_height_assessment.ipynb"><img src="images/logo-jupyter.png"></a>
+<a href="http://nbviewer.jupyter.org/github/ocefpaf/PythonSulKeynote/blob/gh-pages/notebooks/turtles.ipynb"><img src="images/notebook-obis.png" style="width:300px"></a>
+
+. . .
+
+<a href="http://nbviewer.jupyter.org/github/ocefpaf/PythonSulKeynote/blob/gh-pages/notebooks/wave_height_assessment.ipynb"><img src="images/notebook-catalog.png" style="width:300px"></a>
 
 
-# Just one more :-)
+. . .
 
-<a href="http://nbviewer.jupyter.org/github/ocefpaf/PythonSulKeynote/blob/gh-pages/notebooks/gistemp.ipynb"><img src="images/logo-jupyter.png"></a>
+<a href="http://nbviewer.jupyter.org/github/ocefpaf/PythonSulKeynote/blob/gh-pages/notebooks/gistemp.ipynb"><img src="images/notebook-gistemp.png" style="width:300px"></a>
 
 
 # Já que o assunto é Ciência
@@ -391,15 +395,15 @@ Não é nem um pouco diferente do que é atualmente praticado nas comunidades de
 </aside>
 
 
+# E "codar" ciência?
+
+<iframe width="711" height="533" src="https://www.youtube.com/embed/ZyjCqQEUa8o?start=1771" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
+
+
+
 # O ponto é
 
 Ciência não é tão diferente assim de programação!
-
-
-# Talvez a única diferença seja...
-
-<iframe width="711" height="533" src="https://www.youtube.com/embed/ZyjCqQEUa8o?t=1771" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
-
 
 
 # O que eu, profissional da tecnologia, tenho isso?
@@ -417,11 +421,21 @@ Ciência não é tão diferente assim de programação!
 [clique aqui para ver o notebook](http://nbviewer.jupyter.org/gist/ocefpaf/3f1765577d11e0cac3ee905e49936460)
 
 
-# Pangeo
+# Colocando a mão na massa!
+
+<img src="images/sla-map.png" style="width:700px">
+
+
+[http://pangeo.pydata.org](http://pangeo.pydata.org)
+
+
+# sea-surface-height.ipynb
 
 <img src="images/pangeo-ssh.png" style="width:700px">
 
-<a href="http://pangeo.pydata.org/"><img src="images/logo-jupyter.png"></a>
+# sea-surface-height.ipynb
+
+<img src="images/hovmoller.png" style="width:700px">
 
 
 # *Scientific Software pledge*
