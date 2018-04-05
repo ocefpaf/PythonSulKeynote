@@ -644,27 +644,27 @@ extensão longitudinal de Floripa (direta).
 
 # Colocando a mão na massa!
 
-<img src="images/sla-map.png" style="width:700px">
+<img src="images/sla-map.png" style="width:600px">
 
+
+Consigo ver o mar subindo?
+(Spoiler: não!)
 
 [http://pangeo.pydata.org](http://pangeo.pydata.org)
 
-
 <aside class="notes">
 Afinal como é a anomalia do nível do mar?
-Consigo ver o mar subindo?
-(Spoiler: não!)
 </aside>
 
 
 # sea-surface-height.ipynb
 
-<img src="images/pangeo-ssh.png" style="width:700px">
+<img src="images/pangeo-ssh.png" style="width:450px">
 
 
-<aside class="notes">
-Quer dizer, com um cluster, xarray, dask, kubernetes, data cloud,
-e +70 Gigas de dados, sim!
+Quer dizer, com um super cluster, jupyter, python, xarray, dask,
+kubernetes, data cloud, e +70 Gigas de dados, sim!
+
 </aside>
 
 # sea-surface-height.ipynb
