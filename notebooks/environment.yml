@@ -7,7 +7,9 @@ dependencies:
   - pypy2.7
   - r-base=3.4.1
   - geopandas
+  - ipykernel
   - jupyter
+  - jupyter_contrib_nbextensions
   - oct2py
   - octave
   - octave_kernel
